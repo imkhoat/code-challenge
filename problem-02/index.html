@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fancy Form</title>
+
+    <!-- You may add more stuff here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="src/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
+    <div class="container">
+      <h5>Swap!</h5>
+      <div class="card">
+        <div class="card__body">
+          <form onsubmit="return !1" id="swap-form" class="form-container">
+            <div class="form-item">
+              <label for="input-amount" class="label">Amount to send</label>
+              <div style="display: flex; gap: 8px">
+                <input
+                  id="input-amount"
+                  class="input"
+                  type="number"
+                  min="0"
+                  step="0.000001"
+                />
+                <div id="input-token-dropdown"></div>
+              </div>
+            </div>
+            <div class="form-separator">
+              <img src="src/assets/swrap.svg" alt="swap" class="icon__swap" />
+            </div>
+            <div class="form-item">
+              <label for="output-amount" class="label">Amount to receive</label>
+              <div style="display: flex; gap: 8px">
+                <input id="output-amount" class="input" readonly />
+                <div id="output-token-dropdown"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card__footer">
+          <button class="button" form="swap-form">CONFIRM SWAP</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="src/main.ts"></script>
+  </body>
+</html>
