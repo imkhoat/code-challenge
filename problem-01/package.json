@@ -1,0 +1,19 @@
+{
+  "name": "sum-to-n-solutions",
+  "version": "1.0.0",
+  "description": "Three different approaches to sum from 1 to n",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "tsc",
+    "dev": "ts-node --watch index.ts"
+  },
+  "keywords": ["typescript", "algorithms", "sum"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  }
+} 
